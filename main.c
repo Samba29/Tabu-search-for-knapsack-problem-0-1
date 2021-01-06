@@ -1,3 +1,5 @@
+// Code write by Mbono Samba Dieudonne
+// University of Yaounde 1, 14 November 2020
 #include <stdio.h>
 #include <stdlib.h>
 #include <string.h>
@@ -113,7 +115,7 @@ int KnapsackProblemSolveByTabuSearch()
                     int itemToAdd;
                     itemToAdd = BestItemToAdd(copySolution, constraint, valueConstraint, valuesItem, 1);
                     copySolution[itemToAdd] = 1;
-                    printf("Variable à changer pour trouver une nouvelle solution: %d \n", itemToAdd);
+                    printf("Variable Ã  changer pour trouver une nouvelle solution: %d \n", itemToAdd);
                     if (VerifyConstraint(constraint, valueConstraint, copySolution) == 1)
                     {
                         printf("\n les contraintes sont verifier pour la solution: ");
